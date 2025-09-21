@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Il faut sauver Gronnella – RPG React léger</title>
+    <meta
+      name="description"
+      content="Un mini RPG décalé : combats au tour par tour, quête de la princesse Gronnella, humour et dragons mélomanes."
+    />
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <script src="assets/js/scripts.js" defer></script>
+  </head>
+  <body class="no-video">
+    <a class="skip-link" href="#reponses">Aller au contenu</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <span class="brand__logo" aria-hidden="true">🏰</span>
+          <span class="brand__name">
+            Il faut sauver <strong>Gronnella</strong>
+          </span>
+        </div>
+        <nav class="site-nav" aria-label="Navigation primaire">
+          <a href="#accroche">Accueil</a>
+          <a href="#reponses">Réponses</a>
+          <a href="#background">Background</a>
+          <a class="btn btn--sm" href="#jouer">Jouer</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- 1) Accroche -->
+    <section id="accroche" class="hero" aria-label="Accroche">
+      <div class="hero__media" aria-hidden="true">
+        <!-- Option vidéo (silencieuse, boucle) -->
+        <video
+          class="hero__video"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="auto"
+          controls
+          poster="assets/img/poster-trailer.png"
+        >
+          <source src="assets/media/trailer.mp4" type="video/mp4" />
+        </video>
+        <!-- Fallback image si pas de vidéo -->
+        <img
+          class="hero__image"
+          src="assets/img/hero-dragon.png"
+          alt="Le Dragon et le Princesse"
+        />
+      </div>
+
+      <div class="container hero__content">
+        <p class="tag">RPG léger • React • Tour par tour</p>
+        <h1 class="title">
+          Il faut sauver <span class="accent">Gronnella</span>
+        </h1>
+        <p class="subtitle">
+          Incarnez un héros débutant, terrassez des créatures absurdes et
+          retrouvez la princesse perdue entre les égouts du château et la tour
+          d’un dragon mélomane.
+        </p>
+        <div class="actions">
+          <a class="btn btn--primary" href="#jouer">Jouer maintenant</a>
+          <a class="btn btn--ghost" href="#reponses">En savoir plus</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2) Réponses (Quoi, Pourquoi, Gain, Coût) -->
+    <section
+      id="reponses"
+      class="section answers"
+      aria-labelledby="answers-title"
+    >
+      <div class="container">
+        <h2 id="answers-title" class="section__title">C.Q.F.D.</h2>
+        <div class="grid-4">
+          <article class="card">
+            <h3>Quoi</h3>
+            <p>
+              Un mini jeu de rôle en React, au tour par tour. Choisissez un
+              héros, affrontez, progressez, sauvez.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Pourquoi</h3>
+            <p>
+              Mêler humour et technique : composants, pages dédiées, état local,
+              sauvegarde en <code>localStorage</code>.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Gain</h3>
+            <p>
+              Fun immédiat + base saine pour ajouter loot, effets de statut,
+              dialogues, équilibrage dynamique.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Coût</h3>
+            <p>
+              Zéro backend, zéro BDD. Installez, lancez, jouez :
+              <code>npm install &amp;&amp; npm run dev</code>.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3) Background du jeu -->
+    <section
+      id="background"
+      class="section background"
+      aria-labelledby="bg-title"
+    >
+      <div class="container">
+        <h2 id="bg-title" class="section__title">Background du jeu</h2>
+        <div class="bg-layout">
+          <div class="bg-text">
+            <p>
+              Vous cherchez Gronnella. Entre rats géants, gobelins lourds,
+              minotaures vexés et un dragon barde, chaque combat est une petite
+              tragédie comique.
+            </p>
+            <ul class="bullets">
+              <li>
+                <strong>Personnages :</strong> Bravhilde, Archibald, Lunéria,
+                Snargle.
+              </li>
+              <li>
+                <strong>Ennemis :</strong> Rat géant, Gobelin lourd, Minotaure,
+                Dragon vert.
+              </li>
+              <li>
+                <strong>Combats :</strong> tour par tour, critiques, ripostes,
+                journal détaillé.
+              </li>
+              <li>
+                <strong>Progression :</strong> quêtes en chaîne, inventaire en
+                combat, sauvegarde locale.
+              </li>
+            </ul>
+            <p class="note">
+              Feuille de route : API distante, multi-utilisateurs, loot
+              aléatoire, effets temporaires, fins alternatives.
+            </p>
+          </div>
+          <figure class="bg-figure">
+            <img
+              src="assets/img/map-chateau.png"
+              alt="Carte stylisée : château, égouts et tour du dragon"
+            />
+            <figcaption>
+              Le royaume compact où tout peut (mal) tourner.
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4) Jouer (CTA) -->
+    <section id="jouer" class="section cta" aria-labelledby="cta-title">
+      <div class="container cta__box">
+        <h2 id="cta-title" class="section__title">
+          Prêt à tenter votre chance&nbsp;?
+        </h2>
+        <p class="cta__subtitle">
+          Brillez par le courage… ou par l’odeur. Gronnella compte sur vous.
+        </p>
+        <div class="actions">
+          <a class="btn btn--primary btn--lg" href="./">Lancer l’aventure</a>
+          <a
+            class="btn btn--secondary btn--lg"
+            href="https://github.com/nicolasvauchenet/save_gronnella/blob/main/README.md"
+            target="_blank"
+          >
+            Lire le README
+          </a>
+        </div>
+        <p class="cta__footnote">
+          Astuce&nbsp;: les coups critiques doublent les dégâts. Évitez de
+          l’annoncer aux gobelins.
+        </p>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <nav class="footer-nav" aria-label="Navigation de bas de page">
+          <a href="#accroche">Accueil</a>
+          <a href="#reponses">Réponses</a>
+          <a href="#background">Background</a>
+          <a href="#jouer">Jouer</a>
+        </nav>
+        <p class="copy">© <span id="year"></span> – Il faut sauver Gronnella</p>
+      </div>
+    </footer>
+  </body>
+</html>
